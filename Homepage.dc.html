@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sárraga &amp; Asociados — Evaluamos tu caso en 24 horas</title>
+<meta name="description" content="Firma legal en Puerto Rico. Evaluamos tu caso en 24 horas, sin costo por adelantado. Cuéntanos qué pasó y nos encargamos de principio a fin.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Poppins:wght@400;500;600;700&family=Sofia+Sans+Extra+Condensed:wght@800&display=swap" rel="stylesheet">
+<script src="./image-slot.js"></script>
+<style>
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body { margin: 0; background: #F6F4F0; color: #0B0B0B; font-family: 'Poppins', system-ui, sans-serif; -webkit-font-smoothing: antialiased; }
+  @keyframes om-rise { from { opacity: 0; transform: translateY(26px); } to { opacity: 1; transform: none; } }
+  @keyframes om-glow { 0%,100% { box-shadow: 0 0 0 1px rgba(182,155,255,0.42), 0 0 14px rgba(71,18,184,0.22); } 50% { box-shadow: 0 0 0 1px rgba(182,155,255,0.85), 0 0 26px rgba(122,69,232,0.45); } }
+  @keyframes om-sheen { from { background-position: 0% 50%; } to { background-position: 200% 50%; } }
+  [data-accentline] { height: 3px; width: 100%; border-radius: 999px; background: linear-gradient(90deg,#2A0A6E,#4712B8,#B69BFF,#7A45E8,#2A0A6E); background-size: 200% 100%; animation: om-sheen 9s linear infinite; }
+  @keyframes om-drift { from { transform: translate3d(0,0,0); } to { transform: translate3d(-60px,-40px,0); } }
+  [data-rise] { animation: om-rise 760ms cubic-bezier(.22,.7,.25,1) both; }
+  @supports (animation-timeline: view()) {
+    [data-rise] { animation: om-rise linear both; animation-timeline: view(); animation-range: entry 5% cover 26%; }
+  }
+  [data-glow] { position: relative; animation: om-glow 3.4s ease-in-out infinite; transition: transform 220ms cubic-bezier(.2,.7,.3,1), background 200ms ease, color 200ms ease; }
+  [data-glow]:hover { transform: translateY(-2px); }
+  [data-grain]::before { content: ""; position: absolute; inset: -10%; pointer-events: none; opacity: 0.6; background-image: radial-gradient(rgba(182,155,255,0.11) 1px, transparent 1px), repeating-linear-gradient(135deg, rgba(255,255,255,0.035) 0 1px, transparent 1px 9px), repeating-linear-gradient(45deg, rgba(182,155,255,0.05) 0 1px, transparent 1px 14px); background-size: 4px 4px, auto, auto; animation: om-drift 24s linear infinite alternate; }
+  [data-grain-dark]::before { content: ""; position: absolute; inset: -10%; pointer-events: none; opacity: 0.5; background-image: radial-gradient(rgba(11,11,11,0.06) 1px, transparent 1px), repeating-linear-gradient(135deg, rgba(71,18,184,0.05) 0 1px, transparent 1px 11px); background-size: 5px 5px, auto; animation: om-drift 30s linear infinite alternate; }
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    [data-rise], [data-glow], [data-grain]::before, [data-grain-dark]::before, [data-accentline] { animation: none !important; opacity: 1; }
+  }
+  a { color: #0B0B0B; text-decoration: none; }
+  a:hover { color: #4712B8; }
+  button { font-family: inherit; }
+  @keyframes om-marquee { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+  [data-marquee][data-paused="true"] { animation-play-state: paused; }
+  [data-card]:hover [data-reveal] { opacity: 1; }
+  [data-card]:hover [data-cover] { opacity: 0.25; }
+  input::placeholder { color: #8C8880; }
+  [data-navlinks] { display: none !important; }
+  [data-burger] { display: flex !important; }
+  @media (min-width: 900px) {
+    [data-navlinks] { display: flex !important; }
+    [data-burger] { display: none !important; }
+  }
+  [data-hero-media] { aspect-ratio: 765 / 685; }
+  @media (min-width: 900px) and (min-height: 700px) {
+    [data-hero] { min-height: 0; }
+    [data-hero-media] { align-self: stretch; aspect-ratio: auto; height: 100%; min-height: 300px; }
+  }
+  @media (max-width: 899px) {
+    [data-hero-wrap] { min-height: 0 !important; }
+    [data-hero-media] { justify-self: center !important; max-width: 100% !important; }
+  }
+  img, svg, image-slot { max-width: 100%; }
+</style>
+</helmet>
+
+<div style="width:100%;overflow-x:hidden">
+
+  <div data-hero-wrap style="display:flex;flex-direction:column;min-height:100dvh">
+
+  <div style="display:flex;justify-content:center;width:100%;background:linear-gradient(90deg,#2A0A6E 0%,#4712B8 52%,#6A2BD9 100%);padding:6px clamp(16px,4vw,48px)">
+    <div style="display:flex;align-items:center;justify-content:space-between;gap:24px;width:100%;max-width:1344px">
+      <div aria-hidden="true" style="flex:0 0 114px"></div>
+      <a href="#newsletter" style="display:flex;align-items:center;justify-content:center;flex:1 1 auto;gap:14px;color:#fff;text-decoration:none;font-size:13px;font-weight:600;letter-spacing:0.01em">
+        <span style="display:inline-block;background:#0B0B0B;color:#fff;font-family:'Sofia Sans Extra Condensed',sans-serif;font-weight:800;font-size:11px;letter-spacing:0.14em;padding:4px 10px;border-radius:999px;white-space:nowrap">CLICK AQUÍ</span>
+        <span style="color:#fff;text-wrap:pretty;text-align:center">Déjanos una pregunta y la contestaremos. Suscríbete al newsletter</span>
+      </a>
+      <div style="display:flex;align-items:center;gap:8px;flex:0 0 auto">
+        <a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Instagram" style="display:flex;align-items:center;justify-content:center;width:26px;height:26px;border-radius:999px;color:#fff;text-decoration:none;transition:background 160ms ease" style-hover="background:rgba(255,255,255,0.18)">
+          <svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"><rect x="3" y="3" width="18" height="18" rx="5"></rect><circle cx="12" cy="12" r="4"></circle><circle cx="17.4" cy="6.6" r="1.1" fill="currentColor" stroke="none"></circle></svg>
+        </a>
+        <a href="https://youtube.com" target="_blank" rel="noopener" aria-label="YouTube" style="display:flex;align-items:center;justify-content:center;width:26px;height:26px;border-radius:999px;color:#fff;text-decoration:none;transition:background 160ms ease" style-hover="background:rgba(255,255,255,0.18)">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M21.6 7.2a2.5 2.5 0 0 0-1.75-1.77C18.2 5 12 5 12 5s-6.2 0-7.85.43A2.5 2.5 0 0 0 2.4 7.2C2 8.86 2 12 2 12s0 3.14.4 4.8a2.5 2.5 0 0 0 1.75 1.77C5.8 19 12 19 12 19s6.2 0 7.85-.43a2.5 2.5 0 0 0 1.75-1.77C22 15.14 22 12 22 12s0-3.14-.4-4.8ZM10 15.2V8.8L15.5 12 10 15.2Z"></path></svg>
+        </a>
+        <a href="https://tiktok.com" target="_blank" rel="noopener" aria-label="TikTok" style="display:flex;align-items:center;justify-content:center;width:26px;height:26px;border-radius:999px;color:#fff;text-decoration:none;transition:background 160ms ease" style-hover="background:rgba(255,255,255,0.18)">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M13.4 2h2.6c.2 1.6 1.1 2.9 2.6 3.5.7.3 1.4.4 2.1.4v2.6c-1.7 0-3.2-.5-4.6-1.5v6.3a5.9 5.9 0 1 1-5.9-5.9c.3 0 .6 0 .9.1v2.7a3.3 3.3 0 1 0 2.3 3.1V2Z"></path></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <header style="display:flex;justify-content:center;padding:18px clamp(16px,4vw,48px);background:#0B0B0B;position:sticky;top:0;z-index:60;border-bottom:1px solid rgba(255,255,255,0.12)">
+    <div style="display:flex;align-items:center;justify-content:space-between;gap:20px;width:100%;max-width:1344px">
+    <a href="/" style="display:flex;align-items:center">
+      <img src="assets/logo.png" alt="Sárraga &amp; Asociados" style="height:44px;width:auto;display:block;filter:invert(1) brightness(2);mix-blend-mode:screen">
+    </a>
+    <nav style="display:flex;align-items:center;gap:clamp(14px,2vw,32px)">
+      <div style="display:none;gap:clamp(14px,2vw,32px);font-size:14px;font-weight:600" data-navlinks>
+        <a href="/servicios" style="color:#fff" style-hover="color:#B69BFF">Servicios</a>
+        <a href="/noticias" style="color:#fff" style-hover="color:#B69BFF">Noticias</a>
+        <a href="/nosotros" style="color:#fff" style-hover="color:#B69BFF">Nosotros</a>
+        <a href="/casos" style="color:#fff" style-hover="color:#B69BFF">Casos</a>
+      </div>
+      <a href="https://tally.so/r/MeaLkp" target="_blank" rel="noopener" style="background:#4712B8;color:#fff;font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:15px;letter-spacing:0.07em;text-transform:uppercase;padding:9px 17px;border-radius:8px;white-space:nowrap" data-glow style-hover="background:#fff;color:#0B0B0B">Verifica tu caso</a>
+      <button type="button" onClick="{{ toggleMenu }}" aria-label="Menú" style="display:flex;flex-direction:column;gap:5px;background:none;border:0;padding:8px;cursor:pointer" data-burger>
+        <span style="display:block;width:22px;height:2px;background:#fff"></span>
+        <span style="display:block;width:22px;height:2px;background:#fff"></span>
+      </button>
+    </nav>
+    </div>
+  </header>
+
+  <sc-if value="{{ menuOpen }}" hint-placeholder-val="{{ false }}">
+    <div style="display:flex;flex-direction:column;gap:2px;width:100%;max-width:1344px;margin:0 auto;padding:8px clamp(16px,4vw,48px) 20px;background:#0B0B0B;border-bottom:1px solid rgba(255,255,255,0.12);position:sticky;top:73px;z-index:59">
+      <a href="/servicios" style="font-family:'Sofia Sans Extra Condensed',sans-serif;font-weight:800;font-size:24px;color:#fff" style-hover="color:#B69BFF">SERVICIOS</a>
+      <a href="/noticias" style="font-family:'Sofia Sans Extra Condensed',sans-serif;font-weight:800;font-size:24px;color:#fff" style-hover="color:#B69BFF">NOTICIAS</a>
+      <a href="/nosotros" style="font-family:'Sofia Sans Extra Condensed',sans-serif;font-weight:800;font-size:24px;color:#fff" style-hover="color:#B69BFF">NOSOTROS</a>
+      <a href="/casos" style="font-family:'Sofia Sans Extra Condensed',sans-serif;font-weight:800;font-size:24px;color:#fff" style-hover="color:#B69BFF">CASOS</a>
+    </div>
+  </sc-if>
+
+  <section data-hero data-grain-dark style="position:relative;display:flex;justify-content:center;flex:1 1 auto;min-width:0;width:100%;padding:clamp(28px,5vw,64px) clamp(16px,4vw,48px) 0;background:radial-gradient(95% 80% at 88% 8%,rgba(122,69,232,0.11) 0%,rgba(122,69,232,0) 55%),radial-gradient(70% 65% at 4% 92%,rgba(71,18,184,0.08) 0%,rgba(71,18,184,0) 60%),radial-gradient(120% 90% at 12% 0%,#FFFFFF 0%,#F6F4F0 58%)">
+    <div style="position:relative;z-index:1;display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));align-items:end;gap:clamp(24px,4vw,48px);width:100%;max-width:1344px;min-width:0">
+    <div data-rise style="position:relative;z-index:1;display:flex;flex-direction:column;justify-content:center;align-self:center;gap:clamp(16px,2vw,26px);padding:clamp(16px,3vw,40px) 0 clamp(24px,4vw,56px)">
+      <h1 style="margin:0;font-family:'Sofia Sans Extra Condensed',sans-serif;font-weight:800;font-size:clamp(52px,8.4vw,112px);line-height:0.86;letter-spacing:-0.015em;text-transform:uppercase">
+        <span style="display:block">Evaluamos</span>
+        <span style="display:block">tu caso en</span>
+        <span style="display:block;color:#4712B8">24 horas</span>
+      </h1>
+      <div style="display:flex">
+        <a href="https://tally.so/r/MeaLkp" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:10px;background:#4712B8;color:#fff;font-weight:700;font-size:14px;padding:12px 28px;border-radius:8px" data-glow style-hover="background:#0B0B0B;color:#fff"><span>Envíanos tu caso</span><svg viewBox="0 0 24 24" width="17" height="17" fill="currentColor" style="flex:0 0 auto"><path d="M21.6 3.2a1 1 0 0 0-1.05-.14L2.9 10.6c-.83.36-.78 1.56.07 1.85l4.36 1.5 1.55 4.72c.27.82 1.4.9 1.79.13l1.9-3.77 4.1 3.02c.63.46 1.53.14 1.72-.63l3.5-13.2a1 1 0 0 0-.29-1.02ZM9.5 13.1l8.3-6.6-6.5 7.5-.3 3-1.5-3.9Z"/></svg></a>
+      </div>
+    </div>
+    <div data-hero-media data-rise style="position:relative;z-index:1;width:100%;max-width:640px;min-width:0;justify-self:end">
+      <img src="assets/profesionales.png" alt="Equipo legal de Sárraga &amp; Asociados" style="position:absolute;inset:0;width:100%;height:100%;object-fit:contain;object-position:bottom right;display:block">
+      <a href="https://instagram.com/sarragalegal" target="_blank" rel="noopener" style="position:absolute;left:-2%;top:34%;background:#4712B8;color:#fff;font-size:10px;font-weight:700;padding:5px 9px;border-radius:8px;box-shadow:0 10px 24px rgba(71,18,184,0.28);transition:background 160ms ease,color 160ms ease,transform 160ms ease" style-hover="background:#0B0B0B;color:#fff;transform:translateY(-3px)">@sarragalegal</a>
+      <a href="https://instagram.com/abogadosmaldonadopr" target="_blank" rel="noopener" style="position:absolute;right:0%;top:-2%;background:#4712B8;color:#fff;font-size:10px;font-weight:700;padding:5px 9px;border-radius:8px;box-shadow:0 10px 24px rgba(71,18,184,0.28);transition:background 160ms ease,color 160ms ease,transform 160ms ease" style-hover="background:#0B0B0B;color:#fff;transform:translateY(-3px)">@abogadosmaldonadopr</a>
+    </div>
+    </div>
+  </section>
+
+  <section data-grain style="position:relative;overflow:hidden;display:flex;justify-content:center;background:#0B0B0B;color:#fff;padding:clamp(16px,2.2vw,26px) clamp(16px,4vw,48px)">
+    <div style="position:relative;z-index:1;display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:clamp(12px,1.4vw,18px);width:100%;max-width:1344px">
+    <div style="position:relative;display:flex;flex-direction:column;gap:10px;padding:clamp(18px,2vw,26px);border-radius:14px;border:1px solid rgba(182,155,255,0.16);background:linear-gradient(160deg,rgba(255,255,255,0.055) 0%,rgba(255,255,255,0.012) 62%);transition:transform 220ms cubic-bezier(.2,.7,.3,1),border-color 220ms ease,background 220ms ease" style-hover="transform:translateY(-4px);border-color:rgba(182,155,255,0.45);background:linear-gradient(160deg,rgba(122,69,232,0.20) 0%,rgba(255,255,255,0.02) 68%)">
+      <div style="display:flex;align-items:center;justify-content:space-between;gap:12px">
+        <span style="font-family:'Sofia Sans Extra Condensed',sans-serif;font-weight:800;font-size:clamp(24px,2.2vw,30px);letter-spacing:0.03em;color:#fff">RÁPIDO</span>
+        <span style="font-size:10px;font-weight:700;letter-spacing:0.18em;color:#B69BFF">01</span>
+      </div>
+      <div style="height:1px;width:100%;background:linear-gradient(90deg,rgba(182,155,255,0.55),rgba(182,155,255,0))"></div>
+      <span style="font-size:14px;line-height:1.55;color:rgba(255,255,255,0.7);max-width:34ch;text-wrap:pretty">Contestamos tu caso claro y directo en 24 horas.</span>
+    </div>
+    <div style="position:relative;display:flex;flex-direction:column;gap:10px;padding:clamp(18px,2vw,26px);border-radius:14px;border:1px solid rgba(182,155,255,0.16);background:linear-gradient(160deg,rgba(255,255,255,0.055) 0%,rgba(255,255,255,0.012) 62%);transition:transform 220ms cubic-bezier(.2,.7,.3,1),border-color 220ms ease,background 220ms ease" style-hover="transform:translateY(-4px);border-color:rgba(182,155,255,0.45);background:linear-gradient(160deg,rgba(122,69,232,0.20) 0%,rgba(255,255,255,0.02) 68%)">
+      <div style="display:flex;align-items:center;justify-content:space-between;gap:12px">
+        <span style="font-family:'Sofia Sans Extra Condensed',sans-serif;font-weight:800;font-size:clamp(24px,2.2vw,30px);letter-spacing:0.03em;color:#fff">SIN COSTO</span>
+        <span style="font-size:10px;font-weight:700;letter-spacing:0.18em;color:#B69BFF">02</span>
+      </div>
+      <div style="height:1px;width:100%;background:linear-gradient(90deg,rgba(182,155,255,0.55),rgba(182,155,255,0))"></div>
+      <span style="font-size:14px;line-height:1.55;color:rgba(255,255,255,0.7);max-width:34ch;text-wrap:pretty">No pagas nada por adelantado para saber si tienes caso.</span>
+    </div>
+    <div style="position:relative;display:flex;flex-direction:column;gap:10px;padding:clamp(18px,2vw,26px);border-radius:14px;border:1px solid rgba(182,155,255,0.16);background:linear-gradient(160deg,rgba(255,255,255,0.055) 0%,rgba(255,255,255,0.012) 62%);transition:transform 220ms cubic-bezier(.2,.7,.3,1),border-color 220ms ease,background 220ms ease" style-hover="transform:translateY(-4px);border-color:rgba(182,155,255,0.45);background:linear-gradient(160deg,rgba(122,69,232,0.20) 0%,rgba(255,255,255,0.02) 68%)">
+      <div style="display:flex;align-items:center;justify-content:space-between;gap:12px">
+        <span style="font-family:'Sofia Sans Extra Condensed',sans-serif;font-weight:800;font-size:clamp(24px,2.2vw,30px);letter-spacing:0.03em;color:#fff">DONDE SEA</span>
+        <span style="font-size:10px;font-weight:700;letter-spacing:0.18em;color:#B69BFF">03</span>
+      </div>
+      <div style="height:1px;width:100%;background:linear-gradient(90deg,rgba(182,155,255,0.55),rgba(182,155,255,0))"></div>
+      <span style="font-size:14px;line-height:1.55;color:rgba(255,255,255,0.7);max-width:34ch;text-wrap:pretty">Todo Puerto Rico.</span>
+    </div>
+    </div>
+  </section>
+
+  </div>
+
+  <section style="padding:clamp(56px,8vw,120px) clamp(16px,4vw,48px);background:#F6F4F0">
+    <div style="display:flex;flex-direction:column;gap:clamp(28px,4vw,56px);max-width:1344px;margin:0 auto">
+      <div style="display:flex;flex-direction:column;gap:14px"><div data-accentline style="max-width:120px"></div><span style="font-size:11px;font-weight:700;letter-spacing:0.2em;color:#4712B8">CÓMO TRABAJAMOS</span></div>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:clamp(24px,3vw,48px)">
+        <div data-rise style="display:flex;flex-direction:column;gap:14px;border-top:2px solid #4712B8;padding-top:20px">
+          <span style="font-family:'Sofia Sans Extra Condensed',sans-serif;font-weight:800;font-size:clamp(40px,4.4vw,58px);line-height:0.8;color:#4712B8">1</span>
+          <h3 style="margin:0;font-family:'Sofia Sans Extra Condensed',sans-serif;font-weight:800;font-size:clamp(19px,1.8vw,23px);text-transform:uppercase;line-height:1.05">Nos cuentas</h3>
+          <p style="margin:0;font-size:14.5px;line-height:1.6;color:#3B3833;max-width:36ch;text-wrap:pretty">No necesitas tener nada preparado. Nos dices qué pasó como se lo dirías a un amigo. Libre de costo y sin comprometerte.</p>
+        </div>
+        <div data-rise style="display:flex;flex-direction:column;gap:14px;border-top:2px solid #7A45E8;padding-top:20px">
+          <span style="font-family:'Sofia Sans Extra Condensed',sans-serif;font-weight:800;font-size:clamp(40px,4.4vw,58px);line-height:0.8;color:#7A45E8">2</span>
+          <h3 style="margin:0;font-family:'Sofia Sans Extra Condensed',sans-serif;font-weight:800;font-size:clamp(19px,1.8vw,23px);text-transform:uppercase;line-height:1.05">Evaluamos tu caso</h3>
+          <p style="margin:0;font-size:14.5px;line-height:1.6;color:#3B3833;max-width:36ch;text-wrap:pretty">En 24 horas ya estamos revisando tu situación. Si entendemos que no tienes caso, también te lo decimos.</p>
+        </div>
+        <div data-rise style="display:flex;flex-direction:column;gap:14px;border-top:2px solid #B69BFF;padding-top:20px">
+          <span style="font-family:'Sofia Sans Extra Condensed',sans-serif;font-weight:800;font-size:clamp(40px,4.4vw,58px);line-height:0.8;color:#B69BFF">3</span>
+          <h3 style="margin:0;font-family:'Sofia Sans Extra Condensed',sans-serif;font-weight:800;font-size:clamp(19px,1.8vw,23px);text-transform:uppercase;line-height:1.05">Nos encargamos de principio a fin</h3>
+          <p style="margin:0;font-size:14.5px;line-height:1.6;color:#3B3833;max-width:36ch;text-wrap:pretty">Nosotros trabajamos. Tú recibes actualizaciones y sigues con tu vida.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section data-grain style="position:relative;padding:clamp(48px,7vw,96px) 0;background:#0B0B0B;color:#fff;overflow:hidden">
+    <div style="display:flex;flex-direction:column;gap:28px;padding:0 clamp(16px,4vw,48px)">
+      <div style="display:flex;flex-direction:column;gap:14px"><div data-accentline style="max-width:120px"></div><span style="font-size:11px;font-weight:700;letter-spacing:0.2em;color:#B69BFF">TIPOS DE CASO</span></div>
+    </div>
+    <div onMouseEnter="{{ pause }}" onMouseLeave="{{ resume }}" style="position:relative;z-index:1;width:100%;overflow:hidden;padding:32px clamp(16px,4vw,48px) 40px">
+      <div data-marquee ref="{{ trackRef }}" style="display:flex;width:max-content;animation:om-marquee 42s linear infinite">
+        <sc-for list="{{ loopCases }}" as="item" hint-placeholder-count="8">
+          <article data-card style="position:relative;flex:0 0 auto;margin-right:clamp(14px,1.6vw,24px);width:clamp(220px,22vw,300px);aspect-ratio:3/4;border-radius:16px;overflow:hidden;background:#161616;transition:transform 320ms cubic-bezier(.2,.7,.3,1);cursor:pointer" style-hover="transform:scale(1.06);z-index:5">
+            <div data-cover style="position:absolute;inset:0;transition:opacity 320ms ease">
+              <image-slot id="caso-{{ item.slot }}" shape="rect" fit="cover" placeholder="{{ item.title }}"></image-slot>
+            </div>
+            <div data-reveal style="position:absolute;inset:0;opacity:0;transition:opacity 320ms ease;background:#0B0B0B">
+              <sc-if value="{{ item.hasVideo }}" hint-placeholder-val="{{ false }}">
+                <video ref="{{ item.videoRef }}" autoplay muted loop playsinline style="width:100%;height:100%;object-fit:cover;display:block"></video>
+              </sc-if>
+              <sc-if value="{{ item.noVideo }}" hint-placeholder-val="{{ true }}">
+                <div style="display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;width:100%;height:100%;background:#111">
+                  <span style="display:flex;align-items:center;justify-content:center;width:46px;height:46px;border-radius:999px;background:#4712B8;color:#fff;font-size:16px">▶</span>
+                  <span style="font-size:11px;font-weight:700;letter-spacing:0.16em;color:rgba(255,255,255,0.6)">VIDEO PENDIENTE</span>
+                </div>
+              </sc-if>
+            </div>
+            <div style="position:absolute;inset:auto 0 0 0;padding:18px;background:linear-gradient(to top,rgba(11,11,11,0.86),rgba(11,11,11,0));pointer-events:none">
+              <h3 style="margin:0;font-family:'Sofia Sans Extra Condensed',sans-serif;font-weight:800;font-size:clamp(15px,1.3vw,18px);text-transform:uppercase;line-height:1.05;color:#fff">{{ item.title }}</h3>
+            </div>
+          </article>
+        </sc-for>
+      </div>
+    </div>
+    <div style="display:flex;justify-content:center;padding:0 clamp(16px,4vw,48px)">
+      <a href="/casos" style="display:inline-flex;align-items:center;gap:10px;background:#4712B8;color:#fff;font-weight:600;font-size:14px;padding:12px 24px;border-radius:8px" data-glow style-hover="background:#fff;color:#0B0B0B"><span>Ver todos los casos</span><svg viewBox="0 0 24 24" width="17" height="17" fill="currentColor" style="flex:0 0 auto"><path d="M21.6 3.2a1 1 0 0 0-1.05-.14L2.9 10.6c-.83.36-.78 1.56.07 1.85l4.36 1.5 1.55 4.72c.27.82 1.4.9 1.79.13l1.9-3.77 4.1 3.02c.63.46 1.53.14 1.72-.63l3.5-13.2a1 1 0 0 0-.29-1.02ZM9.5 13.1l8.3-6.6-6.5 7.5-.3 3-1.5-3.9Z"/></svg></a>
+    </div>
+  </section>
+
+  <section style="padding:clamp(56px,8vw,120px) clamp(16px,4vw,48px);background:#F6F4F0">
+    <div data-rise style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:clamp(28px,4vw,64px);max-width:1344px;margin:0 auto">
+      <div style="display:flex;flex-direction:column;gap:16px">
+        <div style="display:flex;flex-direction:column;gap:14px"><div data-accentline style="max-width:120px"></div><span style="font-size:11px;font-weight:700;letter-spacing:0.2em;color:#4712B8">PREGUNTAS FRECUENTES</span></div>
+        <h2 style="margin:0;font-family:'Sofia Sans Extra Condensed',sans-serif;font-weight:800;font-size:clamp(30px,3.6vw,48px);line-height:0.94;text-transform:uppercase">Lo que todos<br>preguntan</h2>
+      </div>
+      <div style="display:flex;flex-direction:column">
+        <sc-for list="{{ faqs }}" as="item" hint-placeholder-count="5">
+          <div style="border-top:1px solid rgba(11,11,11,0.18)">
+            <button type="button" onClick="{{ item.toggle }}" style="display:flex;align-items:center;justify-content:space-between;gap:20px;width:100%;background:none;border:0;padding:22px 0;text-align:left;cursor:pointer">
+              <span style="font-size:clamp(15px,1.3vw,17px);font-weight:600;line-height:1.35;text-wrap:pretty">{{ item.q }}</span>
+              <span style="display:flex;align-items:center;justify-content:center;flex:0 0 auto;width:30px;height:30px;border-radius:999px;background:{{ item.dotBg }};color:{{ item.dotFg }};font-size:20px;line-height:1">{{ item.sign }}</span>
+            </button>
+            <div style="max-height:{{ item.maxH }};overflow:hidden;transition:max-height 300ms ease">
+              <p style="margin:0;padding:0 0 24px;font-size:14.5px;line-height:1.65;color:#3B3833;max-width:56ch;text-wrap:pretty">{{ item.a }}</p>
+            </div>
+          </div>
+        </sc-for>
+        <div style="border-top:1px solid rgba(11,11,11,0.18)"></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="newsletter" style="display:flex;justify-content:center;padding:clamp(32px,5vw,72px) clamp(16px,4vw,48px);background:#F6F4F0">
+    <div data-rise data-grain style="position:relative;overflow:hidden;width:100%;max-width:1344px;background:radial-gradient(60% 90% at 100% 100%,rgba(122,69,232,0.26) 0%,rgba(122,69,232,0) 62%),linear-gradient(140deg,#1D1136 0%,#0B0B0B 55%,#150C2B 100%);color:#fff;border-radius:24px;padding:clamp(32px,5vw,72px);box-shadow:0 30px 70px rgba(11,11,11,0.22)">
+      <div style="position:relative;z-index:1;display:flex;flex-direction:column;gap:clamp(24px,3vw,40px);max-width:820px">
+        <h2 style="margin:0;font-family:'Sofia Sans Extra Condensed',sans-serif;font-weight:800;font-size:clamp(32px,4.2vw,56px);line-height:0.92;text-transform:uppercase">Déjanos una pregunta</h2>
+        <p style="margin:0;font-size:clamp(15px,1.2vw,17px);line-height:1.55;color:rgba(255,255,255,0.86);max-width:52ch;text-wrap:pretty">Un abogado real te contesta. Suscríbete y recibe noticias, guías y actualizaciones sobre tus derechos en Puerto Rico.</p>
+        <form onSubmit="{{ submit }}" style="display:flex;flex-direction:column;gap:12px;align-items:stretch;max-width:640px">
+          <textarea required="{{ true }}" rows="3" value="{{ question }}" onChange="{{ setQuestion }}" placeholder="Escribe tu pregunta aquí…" style="width:100%;background:#fff;color:#0B0B0B;border:0;border-radius:8px;padding:14px 18px;font-size:14px;line-height:1.5;font-family:inherit;resize:vertical;outline:none"></textarea>
+          <div style="display:flex;flex-wrap:wrap;gap:12px;align-items:center">
+          <input type="email" required="{{ true }}" value="{{ email }}" onChange="{{ setEmail }}" placeholder="tu@correo.com" style="flex:1 1 260px;min-width:0;background:#fff;color:#0B0B0B;border:0;border-radius:8px;padding:12px 18px;font-size:14px;outline:none">
+          <button type="submit" style="display:inline-flex;align-items:center;gap:10px;background:#4712B8;color:#fff;font-weight:600;font-size:14px;padding:12px 24px;border-radius:8px;border:0;cursor:pointer" data-glow style-hover="background:#fff;color:#0B0B0B"><span>Suscríbete</span><svg viewBox="0 0 24 24" width="17" height="17" fill="currentColor" style="flex:0 0 auto"><path d="M21.6 3.2a1 1 0 0 0-1.05-.14L2.9 10.6c-.83.36-.78 1.56.07 1.85l4.36 1.5 1.55 4.72c.27.82 1.4.9 1.79.13l1.9-3.77 4.1 3.02c.63.46 1.53.14 1.72-.63l3.5-13.2a1 1 0 0 0-.29-1.02ZM9.5 13.1l8.3-6.6-6.5 7.5-.3 3-1.5-3.9Z"/></svg></button>
+          </div>
+        </form>
+        <span style="font-size:14px;color:rgba(255,255,255,0.72)">{{ formNote }}</span>
+      </div>
+    </div>
+  </section>
+
+  <section style="padding:clamp(56px,8vw,120px) clamp(16px,4vw,48px);background:#F6F4F0">
+    <div style="display:flex;flex-direction:column;gap:clamp(28px,4vw,48px);max-width:1344px;margin:0 auto">
+      <div style="display:flex;flex-wrap:wrap;align-items:end;justify-content:space-between;gap:16px">
+        <h2 style="margin:0;font-family:'Sofia Sans Extra Condensed',sans-serif;font-weight:800;font-size:clamp(30px,3.6vw,48px);line-height:0.94;text-transform:uppercase">Artículos</h2>
+        <a href="/articulos" style="display:inline-flex;align-items:center;gap:8px;font-size:14px;font-weight:600;border-bottom:2px solid #4712B8;padding-bottom:2px"><span>Ver todos los artículos</span><svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor" style="flex:0 0 auto"><path d="M21.6 3.2a1 1 0 0 0-1.05-.14L2.9 10.6c-.83.36-.78 1.56.07 1.85l4.36 1.5 1.55 4.72c.27.82 1.4.9 1.79.13l1.9-3.77 4.1 3.02c.63.46 1.53.14 1.72-.63l3.5-13.2a1 1 0 0 0-.29-1.02ZM9.5 13.1l8.3-6.6-6.5 7.5-.3 3-1.5-3.9Z"/></svg></a>
+      </div>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:clamp(16px,2vw,28px)">
+        <sc-for list="{{ posts }}" as="post" hint-placeholder-count="4">
+          <a href="{{ post.href }}" data-rise style="display:flex;flex-direction:column;gap:14px;transition:transform 260ms cubic-bezier(.2,.7,.3,1),opacity 200ms ease" style-hover="opacity:0.82;transform:translateY(-4px)">
+            <div style="position:relative;width:100%;aspect-ratio:1/1">
+              <image-slot id="post-{{ post.slot }}" shape="rounded" radius="14" fit="cover" placeholder="Imagen del artículo"></image-slot>
+            </div>
+            <span style="font-size:10px;font-weight:700;letter-spacing:0.16em;color:#4712B8">{{ post.tag }}</span>
+            <h3 style="margin:0;font-size:15px;font-weight:600;line-height:1.35;text-wrap:pretty">{{ post.title }}</h3>
+          </a>
+        </sc-for>
+      </div>
+    </div>
+  </section>
+
+  <footer style="background:#0B0B0B;color:#fff;padding:clamp(48px,6vw,88px) clamp(16px,4vw,48px) 32px">
+    <div style="display:flex;flex-direction:column;gap:clamp(32px,4vw,56px);max-width:1344px;margin:0 auto">
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:clamp(28px,3vw,48px)">
+        <div style="display:flex;flex-direction:column;gap:14px">
+          <img src="assets/logo.png" alt="Sárraga &amp; Asociados" style="height:32px;width:100px;align-self:flex-start;flex:0 0 auto;display:block;filter:invert(1);mix-blend-mode:screen">
+          <span style="font-size:14px;color:rgba(255,255,255,0.6);max-width:28ch;text-wrap:pretty">Firma legal en Puerto Rico.</span>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:10px">
+          <span style="font-size:11px;font-weight:700;letter-spacing:0.16em;color:#fff">CONTACTO</span>
+          <a href="https://wa.me/17870000000" style="font-size:14px;color:rgba(255,255,255,0.78)" style-hover="color:#B69BFF">WhatsApp</a>
+          <a href="mailto:hola@sarragalegal.com" style="font-size:14px;color:rgba(255,255,255,0.78)" style-hover="color:#B69BFF">hola@sarragalegal.com</a>
+          <a href="https://maps.google.com/?q=San+Juan+Puerto+Rico" target="_blank" rel="noopener" style="font-size:14px;color:rgba(255,255,255,0.78)" style-hover="color:#B69BFF">San Juan, PR · Ver en Maps</a>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:10px">
+          <span style="font-size:11px;font-weight:700;letter-spacing:0.16em;color:#fff">ANTES DE FIRMAR</span>
+          <a href="/videos" style="font-size:14px;color:rgba(255,255,255,0.78)" style-hover="color:#B69BFF">Videos</a>
+          <a href="/guia" style="font-size:14px;color:rgba(255,255,255,0.78)" style-hover="color:#B69BFF">Guía</a>
+          <a href="/preguntas-frecuentes" style="font-size:14px;color:rgba(255,255,255,0.78)" style-hover="color:#B69BFF">Preguntas frecuentes</a>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:10px">
+          <span style="font-size:11px;font-weight:700;letter-spacing:0.16em;color:#fff">LEGAL</span>
+          <a href="/aviso-legal" style="font-size:14px;color:rgba(255,255,255,0.78)" style-hover="color:#B69BFF">Aviso legal</a>
+          <a href="/privacidad" style="font-size:14px;color:rgba(255,255,255,0.78)" style-hover="color:#B69BFF">Privacidad</a>
+          <a href="/terminos" style="font-size:14px;color:rgba(255,255,255,0.78)" style-hover="color:#B69BFF">Términos</a>
+        </div>
+      </div>
+      <div style="display:flex;flex-wrap:wrap;gap:16px;justify-content:space-between;border-top:1px solid rgba(255,255,255,0.14);padding-top:20px">
+        <span style="font-size:13px;color:rgba(255,255,255,0.5);max-width:52ch;text-wrap:pretty">Todo el contenido es información general, no una asesoría legal.</span>
+        <span style="font-size:13px;color:rgba(255,255,255,0.5)">Powered by QBAYMEDIA | All Rights Reserved</span>
+      </div>
+    </div>
+  </footer>
+</div>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;marqueeSeconds&quot;:{&quot;editor&quot;:&quot;range&quot;,&quot;default&quot;:42,&quot;min&quot;:12,&quot;max&quot;:90,&quot;step&quot;:2,&quot;unit&quot;:&quot;s&quot;,&quot;tsType&quot;:&quot;number&quot;,&quot;section&quot;:&quot;Carrusel&quot;},&quot;autoScroll&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Carrusel&quot;},&quot;openFirstFaq&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;FAQ&quot;}}">
+class Component extends DCLogic {
+  state = { paused: false, open: 0, email: "", question: "", note: "", menuOpen: false, wide: true };
+
+  cases = [
+    { slot: "auto", title: "Accidentes de auto", video: "" },
+    { slot: "caidas", title: "Caídas y resbalones", video: "" },
+    { slot: "negligencia", title: "Negligencia médica", video: "" },
+    { slot: "trabajo", title: "Accidentes de trabajo", video: "" },
+    { slot: "mordidas", title: "Mordidas de perro", video: "" }
+  ];
+
+  faqData = [
+    "¿Cuánto cuesta consultar mi caso?",
+    "¿Qué pasa después de que envío mi información?",
+    "¿Cuánto tiempo toma un caso como el mío?",
+    "¿Tengo que ir a corte?",
+    "¿Atienden casos fuera del área metro?"
+  ];
+
+  lorem = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.";
+
+  componentDidMount() {
+    this.applySpeed();
+    if (this.props.openFirstFaq === false) this.setState({ open: -1 });
+  }
+  componentDidUpdate() { this.applySpeed(); }
+
+  applySpeed() {
+    const t = this.track;
+    if (!t) return;
+    const secs = this.props.marqueeSeconds ?? 42;
+    t.style.animationDuration = secs + "s";
+    const stop = this.state.paused || this.props.autoScroll === false;
+    t.style.animationPlayState = stop ? "paused" : "running";
+  }
+
+  renderVals() {
+    const open = this.state.open;
+    return {
+      trackRef: (n) => { this.track = n; },
+      loopCases: [...this.cases, ...this.cases].map(c => ({
+        ...c,
+        hasVideo: !!c.video,
+        noVideo: !c.video,
+        videoRef: (n) => { if (n && c.video && n.src !== c.video) n.src = c.video; }
+      })),
+      paused: this.state.paused ? "true" : "false",
+      menuOpen: this.state.menuOpen,
+      pause: () => this.setState({ paused: true }),
+      resume: () => this.setState({ paused: false }),
+      toggleMenu: () => this.setState(s => ({ menuOpen: !s.menuOpen })),
+      faqs: this.faqData.map((q, i) => ({
+        q,
+        a: this.lorem,
+        sign: open === i ? "−" : "+",
+        dotBg: open === i ? "#0B0B0B" : "transparent",
+        dotFg: open === i ? "#fff" : "#0B0B0B",
+        maxH: open === i ? "320px" : "0px",
+        toggle: () => this.setState(s => ({ open: s.open === i ? -1 : i }))
+      })),
+      posts: [
+        { slot: "1", tag: "ACCIDENTES", title: "Qué hacer en las primeras 48 horas después de un accidente", href: "/articulos/primeras-48-horas" },
+        { slot: "2", tag: "DERECHOS", title: "Tu aseguradora te llamó: qué decir y qué no decir", href: "/articulos/aseguradora-que-decir" },
+        { slot: "3", tag: "GUÍA", title: "Cómo se calcula una compensación en Puerto Rico", href: "/articulos/como-se-calcula" },
+        { slot: "4", tag: "FIRMA", title: "Sin costo por adelantado: cómo funciona de verdad", href: "/articulos/sin-costo-adelantado" }
+      ],
+      email: this.state.email,
+      setEmail: (e) => this.setState({ email: e.target.value }),
+      question: this.state.question,
+      setQuestion: (e) => this.setState({ question: e.target.value }),
+      submit: (e) => {
+        e.preventDefault();
+        if (!this.state.email.trim() || !this.state.question.trim()) {
+          this.setState({ note: "Completa tu pregunta y tu correo." });
+          return;
+        }
+        this.setState({ note: "¡Gracias! Te escribimos pronto.", email: "", question: "" });
+      },
+      formNote: this.state.note
+    };
+  }
+}
+
+</script>
+</body>
+</html>
