@@ -50,6 +50,14 @@
     [data-navlinks] { display: flex !important; }
     [data-burger] { display: none !important; }
   }
+  [data-cta-text-short] { display: none; }
+  @media (max-width: 640px) {
+    [data-cta-spacer] { display: none !important; }
+    [data-cta-badge] { display: none !important; }
+    [data-cta-text-full] { display: none !important; }
+    [data-cta-text-short] { display: block !important; }
+    [data-cta-link] { justify-content: flex-start !important; }
+  }
   [data-hero-media] { aspect-ratio: 765 / 685; }
   @media (min-width: 900px) and (min-height: 700px) {
     [data-hero] { min-height: 0; }
@@ -69,10 +77,11 @@
 
   <div style="display:flex;justify-content:center;width:100%;background:linear-gradient(90deg,#2A0A6E 0%,#4712B8 52%,#6A2BD9 100%);padding:6px clamp(16px,4vw,48px)">
     <div style="display:flex;align-items:center;justify-content:space-between;gap:24px;width:100%;max-width:1344px">
-      <div aria-hidden="true" style="flex:0 0 114px"></div>
-      <a href="#newsletter" style="display:flex;align-items:center;justify-content:center;flex:1 1 auto;gap:14px;color:#fff;text-decoration:none;font-size:13px;font-weight:600;letter-spacing:0.01em">
-        <span style="display:inline-block;background:#0B0B0B;color:#fff;font-family:'Sofia Sans Extra Condensed',sans-serif;font-weight:800;font-size:11px;letter-spacing:0.14em;padding:4px 10px;border-radius:999px;white-space:nowrap">CLICK AQUÍ</span>
-        <span style="color:#fff;text-wrap:pretty;text-align:center">Déjanos una pregunta y la contestaremos. Suscríbete al newsletter</span>
+      <div aria-hidden="true" data-cta-spacer style="flex:0 0 114px"></div>
+      <a href="#newsletter" data-cta-link style="display:flex;align-items:center;justify-content:center;flex:1 1 auto;min-width:0;gap:14px;color:#fff;text-decoration:none;font-size:13px;font-weight:600;letter-spacing:0.01em">
+        <span data-cta-badge style="display:inline-block;background:#0B0B0B;color:#fff;font-family:'Sofia Sans Extra Condensed',sans-serif;font-weight:800;font-size:11px;letter-spacing:0.14em;padding:4px 10px;border-radius:999px;white-space:nowrap">CLICK AQUÍ</span>
+        <span data-cta-text-full style="color:#fff;text-wrap:pretty;text-align:center">Déjanos una pregunta y la contestaremos. Suscríbete al newsletter</span>
+        <span data-cta-text-short style="color:#fff;white-space:nowrap">Déjanos una pregunta</span>
       </a>
       <div style="display:flex;align-items:center;gap:8px;flex:0 0 auto">
         <a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Instagram" style="display:flex;align-items:center;justify-content:center;width:26px;height:26px;border-radius:999px;color:#fff;text-decoration:none;transition:background 160ms ease" style-hover="background:rgba(255,255,255,0.18)">
