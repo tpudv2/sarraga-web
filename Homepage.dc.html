@@ -287,7 +287,7 @@
         <sc-for list="{{ posts }}" as="post" hint-placeholder-count="4">
           <a href="{{ post.href }}" data-rise style="display:flex;flex-direction:column;gap:14px;transition:transform 260ms cubic-bezier(.2,.7,.3,1),opacity 200ms ease" style-hover="opacity:0.82;transform:translateY(-4px)">
             <div style="position:relative;width:100%;aspect-ratio:1/1">
-              <image-slot id="post-{{ post.slot }}" shape="rounded" radius="14" fit="cover" placeholder="Imagen del artículo"></image-slot>
+              <image-slot id="post-{{ post.slot }}" src="{{ post.img }}" shape="rounded" radius="14" fit="cover" placeholder="Imagen del artículo"></image-slot>
             </div>
             <span style="font-size:10px;font-weight:700;letter-spacing:0.16em;color:#4712B8">{{ post.tag }}</span>
             <h3 style="margin:0;font-size:15px;font-weight:600;line-height:1.35;text-wrap:pretty">{{ post.title }}</h3>
@@ -394,10 +394,10 @@ class Component extends DCLogic {
         toggle: () => this.setState(s => ({ open: s.open === i ? -1 : i }))
       })),
       posts: [
-        { slot: "1", tag: "ACCIDENTES", title: "Qué hacer en las primeras 48 horas después de un accidente", href: "/articulos/primeras-48-horas" },
-        { slot: "2", tag: "DERECHOS", title: "Tu aseguradora te llamó: qué decir y qué no decir", href: "/articulos/aseguradora-que-decir" },
-        { slot: "3", tag: "GUÍA", title: "Cómo se calcula una compensación en Puerto Rico", href: "/articulos/como-se-calcula" },
-        { slot: "4", tag: "FIRMA", title: "Sin costo por adelantado: cómo funciona de verdad", href: "/articulos/sin-costo-adelantado" }
+        { slot: "1", tag: "ACCIDENTES", title: "Qué hacer en las primeras 48 horas después de un accidente", href: "/articulos/primeras-48-horas", img: "https://noticias.coches.com/wp-content/uploads/2016/06/accidente-coche-volcado.jpg" },
+        { slot: "2", tag: "DERECHOS", title: "Tu aseguradora te llamó: qué decir y qué no decir", href: "/articulos/aseguradora-que-decir", img: "https://img.magnific.com/foto-gratis/joven-preocupado-sentado-sofa-leyendo-mensajes-texto-telefono-movil_637285-5929.jpg?semt=ais_hybrid&w=740&q=80" },
+        { slot: "3", tag: "GUÍA", title: "Cómo se calcula una compensación en Puerto Rico", href: "/articulos/como-se-calcula", img: "https://www.remitly.com/blog/wp-content/uploads/2021/06/US-dollar-1-3-768x512.jpg" },
+        { slot: "4", tag: "FIRMA", title: "Sin costo por adelantado: cómo funciona de verdad", href: "/articulos/sin-costo-adelantado", img: "https://img.magnific.com/foto-gratis/primer-plano-ojo-humano-verde-pupilas-dilatadas-sobre-fondo-negro_181624-32629.jpg?semt=ais_hybrid&w=740&q=80" }
       ],
       email: this.state.email,
       setEmail: (e) => this.setState({ email: e.target.value }),
