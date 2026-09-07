@@ -262,17 +262,17 @@
 
   <section id="newsletter" style="display:flex;justify-content:center;padding:clamp(32px,5vw,72px) clamp(16px,4vw,48px);background:#F6F4F0">
     <div data-rise data-grain style="position:relative;overflow:hidden;width:100%;max-width:1344px;background:radial-gradient(60% 90% at 100% 100%,rgba(122,69,232,0.26) 0%,rgba(122,69,232,0) 62%),linear-gradient(140deg,#1D1136 0%,#0B0B0B 55%,#150C2B 100%);color:#fff;border-radius:24px;padding:clamp(32px,5vw,72px);box-shadow:0 30px 70px rgba(11,11,11,0.22)">
-      <div style="position:relative;z-index:1;display:flex;flex-direction:column;gap:clamp(24px,3vw,40px);max-width:820px">
-        <h2 style="margin:0;font-family:'Sofia Sans Extra Condensed',sans-serif;font-weight:800;font-size:clamp(32px,4.2vw,56px);line-height:0.92;text-transform:uppercase">Déjanos una pregunta</h2>
-        <p style="margin:0;font-size:clamp(15px,1.2vw,17px);line-height:1.55;color:rgba(255,255,255,0.86);max-width:52ch;text-wrap:pretty">Un abogado real te contesta. Suscríbete y recibe noticias, guías y actualizaciones sobre tus derechos en Puerto Rico.</p>
-        <form onSubmit="{{ submit }}" style="display:flex;flex-direction:column;gap:12px;align-items:stretch;max-width:640px">
-          <textarea required="{{ true }}" rows="3" value="{{ question }}" onChange="{{ setQuestion }}" placeholder="Escribe tu pregunta aquí…" style="width:100%;background:#fff;color:#0B0B0B;border:0;border-radius:8px;padding:14px 18px;font-size:14px;line-height:1.5;font-family:inherit;resize:vertical;outline:none"></textarea>
-          <div style="display:flex;flex-wrap:wrap;gap:12px;align-items:center">
-          <input type="email" required="{{ true }}" value="{{ email }}" onChange="{{ setEmail }}" placeholder="tu@correo.com" style="flex:1 1 260px;min-width:0;background:#fff;color:#0B0B0B;border:0;border-radius:8px;padding:12px 18px;font-size:14px;outline:none">
-          <button type="submit" style="display:inline-flex;align-items:center;gap:10px;background:#4712B8;color:#fff;font-weight:600;font-size:14px;padding:12px 24px;border-radius:8px;border:0;cursor:pointer" data-glow style-hover="background:#fff;color:#0B0B0B"><span>Suscríbete</span><svg viewBox="0 0 24 24" width="17" height="17" fill="currentColor" style="flex:0 0 auto"><path d="M21.6 3.2a1 1 0 0 0-1.05-.14L2.9 10.6c-.83.36-.78 1.56.07 1.85l4.36 1.5 1.55 4.72c.27.82 1.4.9 1.79.13l1.9-3.77 4.1 3.02c.63.46 1.53.14 1.72-.63l3.5-13.2a1 1 0 0 0-.29-1.02ZM9.5 13.1l8.3-6.6-6.5 7.5-.3 3-1.5-3.9Z"/></svg></button>
-          </div>
+      <div style="position:relative;z-index:1;display:flex;flex-wrap:wrap;gap:clamp(28px,5vw,64px)">
+        <div style="flex:1 1 280px;display:flex;flex-direction:column;gap:clamp(16px,2vw,24px)">
+          <h2 style="margin:0;font-family:'Sofia Sans Extra Condensed',sans-serif;font-weight:800;font-size:clamp(32px,4.2vw,56px);line-height:0.92;text-transform:uppercase">Déjanos una pregunta</h2>
+          <p style="margin:0;font-size:clamp(15px,1.2vw,17px);line-height:1.55;color:rgba(255,255,255,0.86);max-width:52ch;text-wrap:pretty">Un abogado real te contesta. Suscríbete y recibe noticias, guías y actualizaciones sobre tus derechos en Puerto Rico.</p>
+        </div>
+        <form onSubmit="{{ submit }}" style="flex:1 1 280px;display:flex;flex-direction:column;gap:12px;align-items:stretch;max-width:480px">
+          <textarea required="{{ true }}" rows="5" value="{{ question }}" onChange="{{ setQuestion }}" placeholder="Escribe tu pregunta aquí…" style="width:100%;background:#fff;color:#0B0B0B;border:0;border-radius:8px;padding:14px 18px;font-size:14px;line-height:1.5;font-family:inherit;resize:vertical;outline:none"></textarea>
+          <input type="email" required="{{ true }}" value="{{ email }}" onChange="{{ setEmail }}" placeholder="tu@correo.com" style="width:100%;background:#fff;color:#0B0B0B;border:0;border-radius:8px;padding:12px 18px;font-size:14px;outline:none">
+          <button type="submit" style="width:100%;display:inline-flex;align-items:center;justify-content:center;gap:10px;background:#4712B8;color:#fff;font-weight:600;font-size:14px;padding:12px 24px;border-radius:8px;border:0;cursor:pointer" data-glow style-hover="background:#fff;color:#0B0B0B"><span>Suscríbete</span><svg viewBox="0 0 24 24" width="17" height="17" fill="currentColor" style="flex:0 0 auto"><path d="M21.6 3.2a1 1 0 0 0-1.05-.14L2.9 10.6c-.83.36-.78 1.56.07 1.85l4.36 1.5 1.55 4.72c.27.82 1.4.9 1.79.13l1.9-3.77 4.1 3.02c.63.46 1.53.14 1.72-.63l3.5-13.2a1 1 0 0 0-.29-1.02ZM9.5 13.1l8.3-6.6-6.5 7.5-.3 3-1.5-3.9Z"/></svg></button>
+          <span style="font-size:14px;color:rgba(255,255,255,0.72)">{{ formNote }}</span>
         </form>
-        <span style="font-size:14px;color:rgba(255,255,255,0.72)">{{ formNote }}</span>
       </div>
     </div>
   </section>
