@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Casos — Sárraga &amp; Asociados</title>
+<meta name="description" content="Áreas de práctica en daños y perjuicios de Sárraga &amp; Asociados: accidentes de tránsito, impericia médica y accidentes en comercios, hoteles y condominios en Puerto Rico.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Poppins:wght@400;500;600;700&family=Sofia+Sans+Extra+Condensed:wght@800&display=swap" rel="stylesheet">
+<script src="./image-slot.js"></script>
+<style>
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body { margin: 0; background: #F6F4F0; color: #0B0B0B; font-family: 'Poppins', system-ui, sans-serif; -webkit-font-smoothing: antialiased; }
+  @keyframes om-rise { from { opacity: 0; transform: translateY(26px); } to { opacity: 1; transform: none; } }
+  @keyframes om-glow { 0%,100% { box-shadow: 0 0 0 1px rgba(182,155,255,0.42), 0 0 14px rgba(71,18,184,0.22); } 50% { box-shadow: 0 0 0 1px rgba(182,155,255,0.85), 0 0 26px rgba(122,69,232,0.45); } }
+  @keyframes om-sheen { from { background-position: 0% 50%; } to { background-position: 200% 50%; } }
+  [data-accentline] { height: 3px; width: 100%; border-radius: 999px; background: linear-gradient(90deg,#2A0A6E,#4712B8,#B69BFF,#7A45E8,#2A0A6E); background-size: 200% 100%; animation: om-sheen 9s linear infinite; }
+  @keyframes om-drift { from { transform: translate3d(0,0,0); } to { transform: translate3d(-60px,-40px,0); } }
+  [data-rise] { animation: om-rise 760ms cubic-bezier(.22,.7,.25,1) both; }
+  @supports (animation-timeline: view()) {
+    [data-rise] { animation: om-rise linear both; animation-timeline: view(); animation-range: entry 5% cover 26%; }
+  }
+  [data-glow] { position: relative; animation: om-glow 3.4s ease-in-out infinite; transition: transform 220ms cubic-bezier(.2,.7,.3,1), background 200ms ease, color 200ms ease; }
+  [data-glow]:hover { transform: translateY(-2px); }
+  [data-grain]::before { content: ""; position: absolute; inset: -10%; pointer-events: none; opacity: 0.6; background-image: radial-gradient(rgba(182,155,255,0.11) 1px, transparent 1px), repeating-linear-gradient(135deg, rgba(255,255,255,0.035) 0 1px, transparent 1px 9px), repeating-linear-gradient(45deg, rgba(182,155,255,0.05) 0 1px, transparent 1px 14px); background-size: 4px 4px, auto, auto; animation: om-drift 24s linear infinite alternate; }
+  [data-grain-dark]::before { content: ""; position: absolute; inset: -10%; pointer-events: none; opacity: 0.5; background-image: radial-gradient(rgba(11,11,11,0.06) 1px, transparent 1px), repeating-linear-gradient(135deg, rgba(71,18,184,0.05) 0 1px, transparent 1px 11px); background-size: 5px 5px, auto; animation: om-drift 30s linear infinite alternate; }
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    [data-rise], [data-glow], [data-grain]::before, [data-grain-dark]::before, [data-accentline] { animation: none !important; opacity: 1; }
+  }
+  a { color: #0B0B0B; text-decoration: none; }
+  a:hover { color: #4712B8; }
+  button { font-family: inherit; }
+  [data-navlinks] { display: none !important; }
+  [data-burger] { display: flex !important; }
+  @media (min-width: 900px) {
+    [data-navlinks] { display: flex !important; }
+    [data-burger] { display: none !important; }
+  }
+  [data-cta-text-short] { display: none; }
+  @media (max-width: 640px) {
+    [data-cta-spacer] { display: none !important; }
+    [data-cta-badge] { display: none !important; }
+    [data-cta-text-full] { display: none !important; }
+    [data-cta-text-short] { display: block !important; }
+    [data-cta-link] { justify-content: flex-start !important; }
+  }
+  [data-catblock]:nth-of-type(even) [data-catmedia] { order: 2; }
+  @media (max-width: 899px) {
+    [data-catblock] [data-catmedia] { order: 0 !important; }
+  }
+  img, svg, image-slot { max-width: 100%; }
+</style>
+</helmet>
+
+<div style="width:100%;overflow-x:hidden">
+
+  <div style="display:flex;justify-content:center;width:100%;background:linear-gradient(90deg,#2A0A6E 0%,#4712B8 52%,#6A2BD9 100%);padding:6px clamp(16px,4vw,48px)">
+    <div style="display:flex;align-items:center;justify-content:space-between;gap:24px;width:100%;max-width:1344px">
+      <div aria-hidden="true" data-cta-spacer style="flex:0 0 114px"></div>
+      <a href="#contacto" data-cta-link style="display:flex;align-items:center;justify-content:center;flex:1 1 auto;min-width:0;gap:14px;color:#fff;text-decoration:none;font-size:13px;font-weight:600;letter-spacing:0.01em">
+        <span data-cta-badge style="display:inline-block;background:#0B0B0B;color:#fff;font-family:'Sofia Sans Extra Condensed',sans-serif;font-weight:800;font-size:11px;letter-spacing:0.14em;padding:4px 10px;border-radius:999px;white-space:nowrap">CLICK AQUÍ</span>
+        <span data-cta-text-full style="color:#fff;text-wrap:pretty;text-align:center">Cuéntanos qué pasó. Evaluamos tu caso en 24 horas.</span>
+        <span data-cta-text-short style="color:#fff;white-space:nowrap">Evaluamos tu caso en 24 horas</span>
+      </a>
+      <div style="display:flex;align-items:center;gap:8px;flex:0 0 auto">
+        <a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Instagram" style="display:flex;align-items:center;justify-content:center;width:26px;height:26px;border-radius:999px;color:#fff;text-decoration:none;transition:background 160ms ease" style-hover="background:rgba(255,255,255,0.18)">
+          <svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"><rect x="3" y="3" width="18" height="18" rx="5"></rect><circle cx="12" cy="12" r="4"></circle><circle cx="17.4" cy="6.6" r="1.1" fill="currentColor" stroke="none"></circle></svg>
+        </a>
+        <a href="https://youtube.com" target="_blank" rel="noopener" aria-label="YouTube" style="display:flex;align-items:center;justify-content:center;width:26px;height:26px;border-radius:999px;color:#fff;text-decoration:none;transition:background 160ms ease" style-hover="background:rgba(255,255,255,0.18)">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M21.6 7.2a2.5 2.5 0 0 0-1.75-1.77C18.2 5 12 5 12 5s-6.2 0-7.85.43A2.5 2.5 0 0 0 2.4 7.2C2 8.86 2 12 2 12s0 3.14.4 4.8a2.5 2.5 0 0 0 1.75 1.77C5.8 19 12 19 12 19s6.2 0 7.85-.43a2.5 2.5 0 0 0 1.75-1.77C22 15.14 22 12 22 12s0-3.14-.4-4.8ZM10 15.2V8.8L15.5 12 10 15.2Z"></path></svg>
+        </a>
+        <a href="https://tiktok.com" target="_blank" rel="noopener" aria-label="TikTok" style="display:flex;align-items:center;justify-content:center;width:26px;height:26px;border-radius:999px;color:#fff;text-decoration:none;transition:background 160ms ease" style-hover="background:rgba(255,255,255,0.18)">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M13.4 2h2.6c.2 1.6 1.1 2.9 2.6 3.5.7.3 1.4.4 2.1.4v2.6c-1.7 0-3.2-.5-4.6-1.5v6.3a5.9 5.9 0 1 1-5.9-5.9c.3 0 .6 0 .9.1v2.7a3.3 3.3 0 1 0 2.3 3.1V2Z"></path></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <header style="display:flex;justify-content:center;padding:11px clamp(16px,4vw,48px);background:#0B0B0B;position:sticky;top:0;z-index:60;border-bottom:1px solid rgba(255,255,255,0.12)">
+    <div style="display:flex;align-items:center;justify-content:space-between;gap:20px;width:100%;max-width:1344px">
+    <a href="/" style="display:flex;align-items:center">
+      <img src="assets/logo.png" alt="Sárraga &amp; Asociados" style="height:30px;width:auto;display:block;filter:invert(1) brightness(2);mix-blend-mode:screen">
+    </a>
+    <nav style="display:flex;align-items:center;gap:clamp(14px,2vw,32px)">
+      <div style="display:none;gap:clamp(14px,2vw,32px);font-size:13px;font-weight:600" data-navlinks>
+        <a href="/servicios" style="color:#fff" style-hover="color:#B69BFF">Servicios</a>
+        <a href="/noticias" style="color:#fff" style-hover="color:#B69BFF">Noticias</a>
+        <a href="/nosotros" style="color:#fff" style-hover="color:#B69BFF">Nosotros</a>
+        <a href="/casos" style="color:#B69BFF">Casos</a>
+      </div>
+      <a href="https://tally.so/r/MeaLkp" target="_blank" rel="noopener" style="background:#4712B8;color:#fff;font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:13px;letter-spacing:0.07em;text-transform:uppercase;padding:7px 15px;border-radius:7px;white-space:nowrap" data-glow style-hover="background:#fff;color:#0B0B0B">Verifica tu caso</a>
+      <button type="button" onClick="{{ toggleMenu }}" aria-label="Menú" style="display:flex;flex-direction:column;gap:4px;background:none;border:0;padding:6px;cursor:pointer" data-burger>
+        <span style="display:block;width:19px;height:2px;background:#fff"></span>
+        <span style="display:block;width:19px;height:2px;background:#fff"></span>
+      </button>
+    </nav>
+    </div>
+  </header>
+
+  <sc-if value="{{ menuOpen }}" hint-placeholder-val="{{ false }}">
+    <div style="display:flex;flex-direction:column;gap:2px;width:100%;max-width:1344px;margin:0 auto;padding:8px clamp(16px,4vw,48px) 20px;background:#0B0B0B;border-bottom:1px solid rgba(255,255,255,0.12);position:sticky;top:53px;z-index:59">
+      <a href="/servicios" style="font-family:'Sofia Sans Extra Condensed',sans-serif;font-weight:800;font-size:24px;color:#fff" style-hover="color:#B69BFF">SERVICIOS</a>
+      <a href="/noticias" style="font-family:'Sofia Sans Extra Condensed',sans-serif;font-weight:800;font-size:24px;color:#fff" style-hover="color:#B69BFF">NOTICIAS</a>
+      <a href="/nosotros" style="font-family:'Sofia Sans Extra Condensed',sans-serif;font-weight:800;font-size:24px;color:#fff" style-hover="color:#B69BFF">NOSOTROS</a>
+      <a href="/casos" style="font-family:'Sofia Sans Extra Condensed',sans-serif;font-weight:800;font-size:24px;color:#B69BFF">CASOS</a>
+    </div>
+  </sc-if>
+
+  <section data-grain-dark style="position:relative;display:flex;justify-content:center;width:100%;padding:clamp(48px,8vw,96px) clamp(16px,4vw,48px) clamp(32px,5vw,56px);background:radial-gradient(95% 80% at 88% 8%,rgba(122,69,232,0.11) 0%,rgba(122,69,232,0) 55%),radial-gradient(120% 90% at 12% 0%,#FFFFFF 0%,#F6F4F0 58%)">
+    <div data-rise style="position:relative;z-index:1;display:flex;flex-direction:column;gap:18px;width:100%;max-width:1344px">
+      <div style="display:flex;flex-direction:column;gap:14px"><div data-accentline style="max-width:120px"></div><span style="font-size:11px;font-weight:700;letter-spacing:0.2em;color:#4712B8">ÁREAS DE PRÁCTICA</span></div>
+      <h1 style="margin:0;font-family:'Sofia Sans Extra Condensed',sans-serif;font-weight:800;font-size:clamp(40px,6.4vw,84px);line-height:0.9;letter-spacing:-0.015em;text-transform:uppercase;max-width:18ch">Daños y perjuicios: casos que atendemos</h1>
+      <p style="margin:0;font-size:clamp(15px,1.2vw,18px);line-height:1.6;color:#3B3833;max-width:56ch;text-wrap:pretty">Si te pasó algo parecido a esto, probablemente tienes caso. Evaluamos tu situación en 24 horas, sin costo por adelantado.</p>
+      <div style="display:flex">
+        <a href="https://tally.so/r/MeaLkp" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:10px;background:#4712B8;color:#fff;font-weight:700;font-size:14px;padding:12px 28px;border-radius:8px" data-glow style-hover="background:#0B0B0B;color:#fff"><span>Envíanos tu caso</span><svg viewBox="0 0 24 24" width="17" height="17" fill="currentColor" style="flex:0 0 auto"><path d="M21.6 3.2a1 1 0 0 0-1.05-.14L2.9 10.6c-.83.36-.78 1.56.07 1.85l4.36 1.5 1.55 4.72c.27.82 1.4.9 1.79.13l1.9-3.77 4.1 3.02c.63.46 1.53.14 1.72-.63l3.5-13.2a1 1 0 0 0-.29-1.02ZM9.5 13.1l8.3-6.6-6.5 7.5-.3 3-1.5-3.9Z"/></svg></a>
+      </div>
+    </div>
+  </section>
+
+  <section style="display:flex;justify-content:center;padding:clamp(24px,3vw,40px) clamp(16px,4vw,48px);background:#F6F4F0">
+    <div style="display:flex;flex-wrap:wrap;gap:10px;width:100%;max-width:1344px">
+      <a href="#transito" style="background:#fff;color:#0B0B0B;border:1px solid rgba(11,11,11,0.14);font-size:13px;font-weight:600;padding:9px 18px;border-radius:999px" style-hover="border-color:#4712B8;color:#4712B8">Accidentes de tránsito</a>
+      <a href="#medica" style="background:#fff;color:#0B0B0B;border:1px solid rgba(11,11,11,0.14);font-size:13px;font-weight:600;padding:9px 18px;border-radius:999px" style-hover="border-color:#4712B8;color:#4712B8">Impericia médica</a>
+      <a href="#comercios" style="background:#fff;color:#0B0B0B;border:1px solid rgba(11,11,11,0.14);font-size:13px;font-weight:600;padding:9px 18px;border-radius:999px" style-hover="border-color:#4712B8;color:#4712B8">Comercios, hoteles y condominios</a>
+    </div>
+  </section>
+
+  <sc-for list="{{ areas }}" as="area" hint-placeholder-count="3">
+    <section id="{{ area.id }}" data-catblock style="padding:clamp(32px,5vw,64px) clamp(16px,4vw,48px);background:{{ area.bg }}">
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));align-items:center;gap:clamp(28px,4vw,56px);max-width:1344px;margin:0 auto">
+        <div data-catmedia data-rise style="position:relative;width:100%;aspect-ratio:4/3;border-radius:20px;overflow:hidden">
+          <image-slot id="area-{{ area.slot }}" src="{{ area.img }}" shape="rounded" radius="20" fit="cover" placeholder="{{ area.title }}"></image-slot>
+        </div>
+        <div data-rise style="display:flex;flex-direction:column;gap:18px">
+          <div style="display:flex;flex-direction:column;gap:14px"><div data-accentline style="max-width:120px"></div><span style="font-size:11px;font-weight:700;letter-spacing:0.2em;color:{{ area.accent }}">{{ area.eyebrow }}</span></div>
+          <h2 style="margin:0;font-family:'Sofia Sans Extra Condensed',sans-serif;font-weight:800;font-size:clamp(28px,3.4vw,44px);line-height:0.96;text-transform:uppercase;color:{{ area.titleColor }}">{{ area.title }}</h2>
+          <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:8px 20px">
+            <sc-for list="{{ area.items }}" as="it" hint-placeholder-count="10">
+              <div style="display:flex;align-items:flex-start;gap:10px">
+                <span style="flex:0 0 auto;margin-top:6px;width:6px;height:6px;border-radius:999px;background:{{ area.accent }}"></span>
+                <span style="font-size:14.5px;line-height:1.5;color:{{ area.textColor }};text-wrap:pretty">{{ it.label }}</span>
+              </div>
+            </sc-for>
+          </div>
+          <div style="display:flex">
+            <a href="https://tally.so/r/MeaLkp" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:10px;background:#4712B8;color:#fff;font-weight:600;font-size:14px;padding:12px 24px;border-radius:8px" data-glow style-hover="background:#0B0B0B;color:#fff"><span>Evalúa tu caso</span><svg viewBox="0 0 24 24" width="17" height="17" fill="currentColor" style="flex:0 0 auto"><path d="M21.6 3.2a1 1 0 0 0-1.05-.14L2.9 10.6c-.83.36-.78 1.56.07 1.85l4.36 1.5 1.55 4.72c.27.82 1.4.9 1.79.13l1.9-3.77 4.1 3.02c.63.46 1.53.14 1.72-.63l3.5-13.2a1 1 0 0 0-.29-1.02ZM9.5 13.1l8.3-6.6-6.5 7.5-.3 3-1.5-3.9Z"/></svg></a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </sc-for>
+
+  <section id="contacto" style="display:flex;justify-content:center;padding:clamp(32px,5vw,72px) clamp(16px,4vw,48px);background:#F6F4F0">
+    <div data-rise data-grain style="position:relative;overflow:hidden;width:100%;max-width:1344px;background:radial-gradient(60% 90% at 100% 100%,rgba(122,69,232,0.26) 0%,rgba(122,69,232,0) 62%),linear-gradient(140deg,#1D1136 0%,#0B0B0B 55%,#150C2B 100%);color:#fff;border-radius:24px;padding:clamp(32px,5vw,72px);box-shadow:0 30px 70px rgba(11,11,11,0.22);display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:24px">
+      <div style="position:relative;z-index:1;display:flex;flex-direction:column;gap:12px;max-width:52ch">
+        <h2 style="margin:0;font-family:'Sofia Sans Extra Condensed',sans-serif;font-weight:800;font-size:clamp(30px,4vw,48px);line-height:0.94;text-transform:uppercase">¿No ves tu caso en la lista?</h2>
+        <p style="margin:0;font-size:15px;line-height:1.55;color:rgba(255,255,255,0.86);text-wrap:pretty">Cuéntanos qué pasó de todas formas. Evaluamos cualquier caso de daños y perjuicios, sin costo por adelantado.</p>
+      </div>
+      <a href="https://tally.so/r/MeaLkp" target="_blank" rel="noopener" style="position:relative;z-index:1;display:inline-flex;align-items:center;gap:10px;background:#4712B8;color:#fff;font-weight:600;font-size:14px;padding:14px 28px;border-radius:8px;white-space:nowrap" data-glow style-hover="background:#fff;color:#0B0B0B"><span>Envíanos tu caso</span><svg viewBox="0 0 24 24" width="17" height="17" fill="currentColor" style="flex:0 0 auto"><path d="M21.6 3.2a1 1 0 0 0-1.05-.14L2.9 10.6c-.83.36-.78 1.56.07 1.85l4.36 1.5 1.55 4.72c.27.82 1.4.9 1.79.13l1.9-3.77 4.1 3.02c.63.46 1.53.14 1.72-.63l3.5-13.2a1 1 0 0 0-.29-1.02ZM9.5 13.1l8.3-6.6-6.5 7.5-.3 3-1.5-3.9Z"/></svg></a>
+    </div>
+  </section>
+
+  <footer style="background:#0B0B0B;color:#fff;padding:clamp(48px,6vw,88px) clamp(16px,4vw,48px) 32px">
+    <div style="display:flex;flex-direction:column;gap:clamp(32px,4vw,56px);max-width:1344px;margin:0 auto">
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:clamp(28px,3vw,48px)">
+        <div style="display:flex;flex-direction:column;gap:14px">
+          <img src="assets/logo.png" alt="Sárraga &amp; Asociados" style="height:32px;width:100px;align-self:flex-start;flex:0 0 auto;display:block;filter:invert(1);mix-blend-mode:screen">
+          <span style="font-size:14px;color:rgba(255,255,255,0.6);max-width:28ch;text-wrap:pretty">Firma legal en Puerto Rico.</span>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:10px">
+          <span style="font-size:11px;font-weight:700;letter-spacing:0.16em;color:#fff">CONTACTO</span>
+          <a href="https://wa.me/17870000000" style="font-size:14px;color:rgba(255,255,255,0.78)" style-hover="color:#B69BFF">WhatsApp</a>
+          <a href="mailto:hola@sarragalegal.com" style="font-size:14px;color:rgba(255,255,255,0.78)" style-hover="color:#B69BFF">hola@sarragalegal.com</a>
+          <a href="https://maps.google.com/?q=San+Juan+Puerto+Rico" target="_blank" rel="noopener" style="font-size:14px;color:rgba(255,255,255,0.78)" style-hover="color:#B69BFF">San Juan, PR · Ver en Maps</a>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:10px">
+          <span style="font-size:11px;font-weight:700;letter-spacing:0.16em;color:#fff">ANTES DE FIRMAR</span>
+          <a href="/videos" style="font-size:14px;color:rgba(255,255,255,0.78)" style-hover="color:#B69BFF">Videos</a>
+          <a href="/guia" style="font-size:14px;color:rgba(255,255,255,0.78)" style-hover="color:#B69BFF">Guía</a>
+          <a href="/preguntas-frecuentes" style="font-size:14px;color:rgba(255,255,255,0.78)" style-hover="color:#B69BFF">Preguntas frecuentes</a>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:10px">
+          <span style="font-size:11px;font-weight:700;letter-spacing:0.16em;color:#fff">LEGAL</span>
+          <a href="/aviso-legal" style="font-size:14px;color:rgba(255,255,255,0.78)" style-hover="color:#B69BFF">Aviso legal</a>
+          <a href="/privacidad" style="font-size:14px;color:rgba(255,255,255,0.78)" style-hover="color:#B69BFF">Privacidad</a>
+          <a href="/terminos" style="font-size:14px;color:rgba(255,255,255,0.78)" style-hover="color:#B69BFF">Términos</a>
+        </div>
+      </div>
+      <div style="display:flex;flex-wrap:wrap;gap:16px;justify-content:space-between;border-top:1px solid rgba(255,255,255,0.14);padding-top:20px">
+        <span style="font-size:13px;color:rgba(255,255,255,0.5);max-width:52ch;text-wrap:pretty">Todo el contenido es información general, no una asesoría legal.</span>
+        <span style="font-size:13px;color:rgba(255,255,255,0.5)">Powered by QBAYMEDIA | All Rights Reserved</span>
+      </div>
+    </div>
+  </footer>
+</div>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  state = { menuOpen: false };
+
+  areaData = [
+    {
+      id: "transito",
+      slot: "transito",
+      eyebrow: "ÁREA 01",
+      title: "Accidentes de tránsito",
+      bg: "#F6F4F0",
+      titleColor: "#0B0B0B",
+      textColor: "#3B3833",
+      accent: "#4712B8",
+      img: "https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1200&q=80",
+      items: [
+        "Colisiones entre vehículos de motor",
+        "Accidentes de motora",
+        "Atropello de peatones",
+        "Atropello de ciclistas",
+        "Accidentes de pasajeros en Uber, taxi y porteadores públicos",
+        "Accidentes con vehículos comerciales y de flota",
+        "Colisiones con ganado o caballos sueltos en la vía",
+        "Accidentes con resultado de muerte"
+      ]
+    },
+    {
+      id: "medica",
+      slot: "medica",
+      eyebrow: "ÁREA 02",
+      title: "Impericia médica y responsabilidad hospitalaria",
+      bg: "#0B0B0B",
+      titleColor: "#fff",
+      textColor: "rgba(255,255,255,0.75)",
+      accent: "#B69BFF",
+      img: "https://images.unsplash.com/photo-1550831107-1553da8c8464?auto=format&fit=crop&w=1200&q=80",
+      items: [
+        "Error en el diagnóstico",
+        "Tardanza en el diagnóstico",
+        "Errores de medicación",
+        "Errores de despacho en farmacia",
+        "Material o instrumento quirúrgico retenido",
+        "Cirugía en sitio incorrecto",
+        "Negligencia en sala de emergencias",
+        "Alta prematura",
+        "Negligencia de enfermería",
+        "Fallas de protocolo y de supervisión hospitalaria"
+      ]
+    },
+    {
+      id: "comercios",
+      slot: "comercios",
+      eyebrow: "ÁREA 03",
+      title: "Accidentes en comercios, hoteles y condominios",
+      bg: "#F6F4F0",
+      titleColor: "#0B0B0B",
+      textColor: "#3B3833",
+      accent: "#4712B8",
+      img: "https://images.unsplash.com/photo-1596394516093-501ba68a0ba6?auto=format&fit=crop&w=1200&q=80",
+      items: [
+        "Caídas por derrames y superficies mojadas",
+        "Caídas por desniveles y defectos en el piso",
+        "Caídas en escaleras",
+        "Caídas en estacionamientos y accesos",
+        "Caídas por iluminación deficiente",
+        "Accidentes en ascensores",
+        "Accidentes en piscinas y áreas recreativas",
+        "Lesiones por caída de mercancía y objetos",
+        "Lesiones por desprendimiento de balcones, barandas y fachadas",
+        "Agresiones por seguridad negligente",
+        "Ataques de animales en propiedad ajena"
+      ]
+    }
+  ];
+
+  renderVals() {
+    return {
+      menuOpen: this.state.menuOpen,
+      toggleMenu: () => this.setState(s => ({ menuOpen: !s.menuOpen })),
+      areas: this.areaData.map(a => ({
+        ...a,
+        items: a.items.map(label => ({ label }))
+      }))
+    };
+  }
+}
+</script>
+</body>
+</html>

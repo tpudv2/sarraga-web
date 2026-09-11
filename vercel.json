@@ -3,6 +3,7 @@
     { "source": "/", "destination": "/Homepage.dc.html" },
     { "source": "/servicios", "destination": "/Servicios.dc.html" },
     { "source": "/nosotros", "destination": "/Nosotros.dc.html" },
-    { "source": "/noticias", "destination": "/Noticias.dc.html" }
+    { "source": "/noticias", "destination": "/Noticias.dc.html" },
+    { "source": "/casos", "destination": "/Casos.dc.html" }
   ]
 }
